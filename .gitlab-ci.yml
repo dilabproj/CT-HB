@@ -1,0 +1,13 @@
+stages:
+    - test
+
+variables:
+    GIT_DEPTH: "3"
+
+test:
+    image: twmicrosheep/miniconda_py37:latest
+    script:
+        - export PATH="$PATH:/root/.local/bin:/root/miniconda3/bin"
+        - echo $PATH
+        - make init
+        - make lint

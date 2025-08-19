@@ -1,0 +1,38 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+tqdm = "*"
+pandas = "*"
+prettytable = "*"
+matplotlib = "*"
+seaborn = "*"
+plotly = "*"
+jupyter = "*"
+biosppy = "*"
+sklearn = "*"
+imbalanced-learn = "*"
+sqlalchemy = "*"
+sqlalchemy-utils = "*"
+wandb = "*"
+torch = "==1.4.0"
+tensorboard = "==1.14.0"
+# Fix torch SummaryWriter: No module named 'past'
+future = "*"
+# Suppress tensorflow/tensorboard Warnings
+numpy = "==1.16.4"
+pylint = "*"
+torchvision = "==0.5.0"
+wfdb = "*"
+scipy = "==1.2.1"
+pycm = "==2.7"
+
+[dev-packages]
+flake8 = "*"
+pylint = "*"
+mypy = "*"
+
+[requires]
+python_version = "3.7"
